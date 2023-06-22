@@ -1,0 +1,725 @@
+/*FORMATAÇÃO DE FONTE E BODY*/
+	@font-face{
+		font-family: Righteous;
+		src: url(../Fontes/Righteous-Regular.ttf);
+	}
+
+	.body{
+		background-image: url("../HTML/Imagens/Background/Background.jpg");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		font-family: 'Righteous',sans-serif;
+		font-size: 1.06rem;
+		margin: 0;
+	}
+
+	.corpoSite{
+		margin-right: 10%;
+		margin-left: 10%;
+		margin-bottom: 1.5%;
+		background-color: rgba(223, 225, 255, 0.96);
+	}
+
+	.espaçamento{
+		margin-left: 1.5%;
+	}
+
+
+
+
+/*FORMATAÇÃO DE DIVS (MENU SUPERIOR E LINKS INTERNOS)*/
+	.menu{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		position: fixed;
+		top:0;
+		right: 0;
+		left: 0;
+		padding-top: 0.4%;
+		padding-bottom: 0.4%;
+		background-color: #00098e;
+		color: #e0f5ff;
+		z-index: 1;
+	}
+
+	.menu a{
+		color: #b00000;
+		text-decoration: none;
+	}
+
+	.menuItem{
+		border-radius: 5px;
+		border: 4px outset #aae6aa;
+		background-color: #bcffbc;
+
+	}
+
+	.menuItem:hover{
+		color: #a10000;
+		background-color: #a8dca8;
+		transform: scale(1.02,1.02);
+		transition-duration: 450ms;
+	}
+
+	.menuItem:active{
+		color: #780000;
+		background-color: #91c191;
+		transform: scale(0.98,0.98);
+		transition-duration: 20ms;
+		border: 4px inset #aae6aa;
+	}
+
+	.link a{
+		text-decoration: none;
+		color: #00098e;
+		background-color: rgba(0, 9, 138, 0.2);
+		border-radius: 5px;
+	}
+
+	.link a:hover{
+		text-decoration: underline;
+		color: #000878;
+		background-color: rgba(0, 9, 138, 0.3);
+	}
+
+	.link:hover{
+		transform: scale(1.01,1.01);
+		transition-duration: 450ms;
+	}
+
+
+	.link a:active{
+		color: #000661;
+		background-color: rgba(0, 9, 138, 0.5);
+	}
+
+	.link:active{
+		transform: scale(0.99,0.99);
+		transition-duration: 20ms;
+	}
+
+	.AQUI{
+		text-decoration: underline;
+		background-color: #bcffbc;
+		color: #b00000;
+		font-style: italic;
+		font-variant: small-caps;
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+
+
+
+
+
+
+
+/*FORMATAÇÃO DE DIVS (TEXTO, VÍDEO E IMAGENS)*/
+	.texto{
+		background-color: rgba(0, 9, 138, 0.2);
+		border-radius: 5px;
+		border: 6px outset rgba(0, 9, 138,0.5);
+		position: relative;
+		left: 585px;
+		bottom: 330px;
+		margin-right: 70%;
+		box-shadow: -4px 4px 1px #c0c0c0;
+	}
+
+	.video{
+		border: 6px outset rgba(0, 9, 138,0.5);
+		background-color: rgba(0, 9, 138,0.2);
+	}
+
+	.lojas:hover{
+		transform: scale(1.01,1.01);
+		transition-duration: 450ms;
+	}
+
+	.lojas:active{
+		transform: scale(0.99,0.99);
+		transition-duration: 20ms;
+	}
+
+	.lojasImg{
+		width: 15%;
+	}
+
+
+
+
+
+
+ /*FORMATAÇÃO DE LISTAS*/
+	.nVIDIAlist a{
+		color: #007e24;
+		text-decoration: none;
+	}
+
+	.nVIDIAlist a:hover{
+		color: #006a1e;
+		text-decoration: underline;
+	}
+
+	.nVIDIAlist a:active{
+		color: #005719;
+	}
+
+	.nVIDIAlist{
+		list-style-image: url("../HTML/Imagens/Ícones/nVIDIA Icon.png");
+	}
+	.AMDlist a{
+		color: #b00000;
+		text-decoration: none;
+	}
+
+	.AMDlist a:hover{
+		color: #a10000;
+		text-decoration: underline;
+	}
+
+	.AMDlist a:active{
+		color: #780000;
+	}
+
+	.AMDlist{
+		list-style-image: url("../HTML/Imagens/Ícones/AMD Icon.png");
+	}
+
+
+
+
+
+
+
+ /*FORMATAÇÃO TEXTUAL, CORES, BACKGROUND...*/
+	.title{
+		color:#005017;
+		font-size: 2.3em;
+		font-weight: bold;
+		text-shadow: -4px 4px 1px #c0c0c0;
+		text-align: center;
+
+	}
+
+	.subtitle{
+		color: #005017;
+		font-size: 1.3em;
+		font-weight: bold;
+		text-shadow: -4px 4px 1px #c0c0c0;
+	}
+
+	.footnote{
+		font-style: italic;
+		font-size: 0.82em;
+	}
+
+	.list{
+		color: #b00000;
+		font-size: 1em;
+	}
+
+	.table{
+		box-shadow: -4px 4px 1px #c0c0c0;
+		width: 95%;
+		border: 6px outset rgba(0, 9, 138,0.5);
+		background-color: rgba(0, 9, 138, 0.2);
+	}
+
+	.tableTitle{
+		color: #b00000;
+		font-size: 1.47em;
+		background-color: #ffcaca;
+	}
+
+	.tableSubtitle{
+		color: #b00000;
+		font-size: 1.12em;
+		background-color: #ffcaca;
+	}
+
+	.nVIDIA{
+		color: #007e24;
+		background-color: #bcffbc;
+		text-align: center;
+	}
+
+	.nVIDIAsub{
+		color: #007e24;
+		text-decoration: underline;
+	}
+
+	.AMDsub{
+		color: #b00000;
+		text-decoration: underline;
+	}
+
+	.AMD{
+		color: #b00000;
+		background-color: #ffcaca;
+		text-align: center;
+	}
+
+	.e-mail{
+		color: #b00000;
+		text-decoration: underline;
+	}
+
+	.e-mailImage{
+		list-style-image: url("../HTML/Imagens/Ícones/Email Icon.png");
+	}
+
+	.notes{
+		font-style: italic;
+		font-variant: small-caps;
+		font-size: 0.88em;
+	}
+
+
+
+
+
+
+/*FORMATAÇÃO DE FORMULÁRIO*/
+	.cadastro{
+		background-color: rgba(0, 9, 138, 0.2);
+		border-radius: 5px;
+		box-shadow: -4px 4px 1px #c0c0c0;
+	}
+
+	label{
+		color: #000661;
+	}
+
+	textarea{
+		border-radius: 5px;
+		background-color: #eceeff;
+		border-width: 2px;
+	}
+
+	textarea:hover{
+		border-radius: 0;
+		background-color: #dbdefd;
+	}
+
+	textarea:focus{
+		color: white;
+		background-color: #00098e;
+		border-radius: 0;
+		border-color: black;
+	}
+
+	.campo{
+		width: 65%;
+		height: 25px;
+		border-radius: 5px;
+		background-color: #eceeff;
+	}
+
+	.campo:hover{
+		border-radius: 0;
+		background-color: #dbdefd;
+	}
+
+	.campo:focus{
+		color: white;
+		background-color: #00098e;
+		border-radius: 0;
+		border-color: black;
+	}
+
+	.idade{
+		width: 120px;
+		border-radius: 5px;
+		background-color: #eceeff;
+	}
+
+	.idade:hover{
+		border-radius: 0;
+		background-color: #dbdefd;
+	}
+
+	.idade:focus{
+		color: white;
+		background-color: #00098e;
+		border-radius: 0;
+		border-color: black;
+	}
+
+	.data_de_nascimento{
+		width: 125px;
+		border-radius: 5px;
+		background-color: #eceeff;
+	}
+
+	.data_de_nascimento:hover{
+		border-radius: 0;
+		background-color: #dbdefd;
+ 	}
+
+ 	.data_de_nascimento:focus{
+		color: white;
+		background-color: #00098e;
+		border-radius: 0;
+		border-color: black;
+ 	}
+
+	.button{
+		font-variant: small-caps;
+		font-family: arial,sans-serif;
+		font-size: 16px;
+		background-color: #5779b8;
+		color: white;
+		border-top: 5px solid #7d91b6;
+		border-left: 5px solid #7d91b6;
+		border-right: 5px solid #325eaf;
+		border-bottom: 5px solid #325eaf;
+		box-shadow: -3px 3px 1px #c0c0c0;
+	}
+
+	.button:hover{
+		font-variant: small-caps;
+		font-family: arial,sans-serif;
+		font-size: 16px;
+		background-color: #4e6a9e;
+		color: white;
+		border-top: 5px solid #7d91b6;
+		border-left: 5px solid #7d91b6;
+		border-right: 5px solid #325eaf;
+		border-bottom: 5px solid #325eaf;
+	}
+
+	.button:active{
+		font-variant: small-caps;
+		font-family: arial,sans-serif;
+		font-size: 16px;
+		background-color: #4c6797;
+		color: white;
+		border-top: 5px solid #2d5296;
+		border-left: 5px solid #2d5296;
+		border-right: 5px solid #63738f;
+		border-bottom: 5px solid #63738f;
+		box-shadow: -2px 2px 1px #c0c0c0;
+	}
+
+
+
+
+
+/*MEDIA QUERIES - RESPONSIVIDADE*/
+
+	/*Telas Pequenas de Smartphones - Galaxy Fold*/
+		@media (min-width: 280px) and (max-width: 319px){
+			.texto{
+				position: static;
+				margin-right: 1%;
+			}
+
+		.body{
+			background-image: none;
+			font-size: 0.80rem;
+			margin-right: 0;
+			margin-top: 35%;
+			background-color: rgba(223, 225, 255, 0.96);
+			display: flex;
+		}
+
+		.corpoSite{
+			margin-right: 0;
+			margin-left: 0;
+			margin-bottom: 0;
+			background-color: rgba(223, 225, 255, 0.96);
+			display: flex;
+		}
+
+		.title{
+			margin-right: 15%;
+		}
+
+		.menu{
+			flex-direction: column;
+		}
+
+		.table{
+			display: flex;
+			height: 5%;
+			width: 95%;
+			font-size: 0.299rem;
+			background-color: rgba(223, 225, 255, 0.96);
+			box-shadow: none;
+			border: none;
+		}
+
+		.menu{
+			align-items: center;
+		}
+
+		iframe{
+			height: 5%;
+			width: 95%;
+		}
+
+		img{
+			width: 80%;
+		}
+
+		.lojasImg{
+			width: 35%;
+		}
+
+	}
+
+
+	/*Telas de Smatphones mais Comuns - Moto G4*/
+		@media (min-width: 320px) and (max-width: 480px){
+		.texto{
+			position: static;
+			margin-right: 1.5%;
+		}
+
+		.body{
+			background-image: none;
+			font-size: 0.80rem;
+			margin-right: 0;
+			margin-top: 30%;
+			background-color: rgba(223, 225, 255, 0.96);
+			display: flex;
+		}
+
+		.corpoSite{
+			margin-right: 0;
+			margin-left: 0;
+			margin-bottom: 0;
+			background-color: rgba(223, 225, 255, 0.96);
+			display: flex;
+		}
+
+		.title{
+			margin-right: 15%;
+		}
+
+		.menu{
+			flex-direction: column;
+		}
+
+		.table{
+			display: flex;
+			height: 5%;
+			width: 95%;
+			font-size: 0.33rem;
+			background-color: rgba(223, 225, 255, 0.96);
+			box-shadow: none;
+			border: none;
+
+		}
+
+		.menu{
+			align-items: center;
+		}
+
+		.lojasImg{
+			width: 45%;
+		}
+
+		iframe{
+			height: 5%;
+			width: 95%;
+		}
+
+		img{
+			width: 80%;
+		}
+	}
+
+
+	/*Telas de Celulares Maiores ou Tablets Pequenos - Surface Duo*/
+	@media (min-width: 481px) and (max-width: 767px){
+		.texto{
+			position: static;
+			margin-right: 32%;
+		}
+
+		.body{
+			background-image: none;
+			font-size: 1.06rem;
+			margin-right: 0;
+			margin-top: 10%;
+			background-color: rgba(223, 225, 255, 0.96);
+			display: flex;
+		}
+
+		.corpoSite{
+			margin-right: 0;
+			margin-left: 0;
+			margin-bottom: 0;
+		}
+
+		.lojasImg{
+			width: 35%;
+		}
+
+	}
+
+
+	/*Telas de Tablets - iPad*/
+	@media (min-width: 768px) and (max-width: 1024px){
+		.texto{
+			position: static;
+			margin-right: 35.5%;
+		}
+
+		.body{
+			background-image: none;
+			font-size: 1.22rem;
+			margin-right: 0;
+			margin-top: 5%;
+			background-color: rgba(223, 225, 255, 0.96);
+			display: flex;
+		}
+
+		.corpoSite{
+			margin-right: 0;
+			margin-left: 0;
+			margin-bottom: 0;
+		}
+
+		.table{
+			font-size: 0.9rem;
+		}
+
+		img{
+			width: 55%;
+		}
+
+		fieldset{
+			width: 119%;
+		}
+
+		.lojasImg{
+			width: 35%;
+		}
+
+	}
+
+
+	/*Telas de Tablets Maiores - Nest Hub Max*/
+	@media (min-width: 1025px) and (max-width: 1280px){
+		.body{
+			background-repeat: repeat;
+		}
+
+		img{
+			width: 40%;
+		}
+
+	}
+
+
+	/*Telas de laptops*/
+	@media (min-width: 1281px) and (max-width: 1367px){
+		.body{
+		background-repeat: repeat;
+		}
+	}
+
+
+
+/*MEDIA TYPE - PRINT*/
+	@media print{
+		.body{
+			margin-top: 0;
+		}
+
+		.menu{
+			display: none;
+		}
+
+		.e-mail{
+			color: black;
+		}
+
+		.AQUI{
+			color: black;
+		}
+
+		.texto{
+			border: 2px solid black;
+			box-shadow: none;
+		}
+
+		.video{
+			display: none;
+		}
+		.nVIDIAlist a{
+			color: black;
+		}
+
+		.AMDlist a{
+			color: black;
+		}
+
+		.title{
+			color: black;
+		}
+
+		.subtitle{
+			color: black;
+		}
+
+		.table{
+			background-color: none;
+			box-shadow: none;
+			border: 2px solid black;
+		}
+
+		.tableTitle{
+			color: black;
+		}
+
+		.tableSubtitle{
+			color: black;
+		}
+
+		.nVIDIA{
+			color: black;
+		}
+
+		.nVIDIAsub{
+			color: black;
+		}
+
+		.AMDsub{
+			color: black;
+		}
+
+		.AMD{
+			color: black;
+		}
+
+		.list{
+			color: black;
+		}
+
+		.link{
+			display: none;
+		}
+
+		.cadastro{
+			box-shadow: none;
+		}
+
+		.button{
+			display: none;
+		}
+
+		a{
+			text-decoration: none;
+			color: black;
+		}
+
+		label{
+			color: black;
+		}
+	}

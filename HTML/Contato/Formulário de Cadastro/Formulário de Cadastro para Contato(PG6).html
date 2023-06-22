@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cadastro</title>
+		<link rel="icon" href="../../Imagens/Imagens Favicon/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../../../CSS/style.css">
+	</head>
+	<body class="body">
+		<nav class="menu">
+			<nav class="menuItem">
+				<a href="../../index.html">Placas de Vídeo com maior Custo-Benefício</a>
+			</nav>
+
+			<nav class="menuItem">
+				<a href="../Contato(PG5).html">Contato</a>
+			</nav>
+		</nav>
+
+		<section class="corpoSite">
+			<div class="espaçamento">
+				<p class="title">Cadastro de Usuário</p>
+				<form>
+					<fieldset>
+						<legend class="subtitle">Cadastro de Dados Pessoais</legend>
+							<div class="cadastro">
+								<label for="nome">Nome:*</label>
+								<br>
+								<input class="campo" type="text" name="nome" id="nome" accesskey="N" placeholder="Digite seu Nome" size="40" required><span class="notes">(alt+n)</span>
+								<br>
+								<br>
+
+								<label for="idade">Idade:*</label>
+								<br>
+								<input class="idade" type="number" name="idade" id="idade" accesskey="I" placeholder="Insira sua Idade" min="1" required><span class="notes">(alt+i)</span>
+								<br>
+								<br>
+
+								<label for="data_de_nascimento">Data de Nascimento:*</label><br>
+								<input class="data_de_nascimento" type="date" name="data_de_nascimento" id="data_de_nascimento" accesskey="A" required><span class="notes">(alt+a)</span>
+								<br>
+								<br>
+							</div>
+					</fieldset>
+
+					<fieldset>
+						<legend class="subtitle">Cadastro de Conta</legend>
+							<div class="cadastro">
+								<label for="e-mail">E-mail:*</label>
+								<br>
+								<input class="campo" type="email" name="e-mail" id="e-mail" accesskey="E" placeholder="Digite seu E-mail" size="50" required><span class="notes">(alt+e)</span>
+								<br>
+								<br>
+
+								<label for="senha">Senha (máximo de 10 caracteres):*</label>
+								<br>
+								<input class="campo" type="password" name="senha" id="senha" accesskey="S" placeholder="Digite sua Senha" maxlength="10" size="25" required><span class="notes">(alt+s)</span>
+								<br>
+								<br>
+
+								<label for="confirmação">Confirmação:*</label>
+								<br>
+								<input class="campo" type="password" name="confirmação" id="confirmação" accesskey="C" placeholder="Digite sua Senha Novamente" maxlength="10" size="25" required><span class="notes">(alt+c)</span>
+								<br>
+								<br>
+							</div>
+					</fieldset>
+
+					<fieldset>
+						<legend class="subtitle">Sexo</legend>
+							<div class="cadastro">
+								<label for="sexo">Sexo*</label>
+								<br>
+								<input type="radio" name="sexo" id="sexo" value="M">M
+								<input type="radio" name="sexo" id="sexo" value="F">F
+								<input type="radio" name="sexo" id="sexo" value="outro">Outro
+								<input type="radio" name="sexo" id="sexo" value="prefiro não informar">Prefiro não Informar
+								<br>
+								<br>
+
+								<label for="outro">Outro</label><br>
+								<input class="campo" type="text" name="outro" id="outro" accesskey="O" placeholder="Digite seu Sexo(Caso tenha escolhido 'Outro' na opção anterior)" size="60"><span class="notes">(alt+o)</span>
+								<br>
+								<br>
+							</div>
+					</fieldset>
+			
+					<fieldset>
+						<legend class="subtitle">Observações</legend>
+						<div class="cadastro">
+							Se você encontrar algum problema em nosso site, por favor, relate-o no campo abaixo:<br>
+							<textarea class="obs" rows="8" cols="35" accesskey="B"></textarea><span class="notes">(alt+b)</span>
+							<br>
+							<br>
+						</div>
+					</fieldset>
+					<br>
+
+					<input class="button" type="submit" name="Salvar" value="Salvar">
+					<input class="button" type="reset" name="Apagar" value="Apagar">
+				</form>
+				<br>
+				<br>
+
+				<span class="footnote">*Todos os itens marcados com (*) são obrigatórios.*</span>
+			</div>
+		</section>
+	</body>
+</html>
